@@ -15,112 +15,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="here will be text from buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj2-lL-loy">
-                                <rect key="frame" x="87.5" y="129" width="239" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvI-ou-Yn5">
+                                <rect key="frame" x="163" y="347" width="88.5" height="202"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start" subtitle="">
+                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9oa-IR-tUg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here will be text from buttons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj2-lL-loy">
+                                <rect key="frame" x="16" y="134" width="382" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2C-33-Zix">
-                                <rect key="frame" x="48" y="547" width="83" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="soft_egg" imageContentMode="scaleAspectFit"/>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="SOFT">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Montserrat-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="softButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIG-A8-NOh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-9I-F1z">
-                                <rect key="frame" x="158" y="547" width="98" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="medium_egg" imageContentMode="scaleAspectFit"/>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="MEDIUM">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Montserrat-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="mediumButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbb-A4-hf4"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JtP-z8-SOa">
-                                <rect key="frame" x="47.5" y="737" width="319" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-h0-Jd4">
-                                <rect key="frame" x="276" y="547" width="98" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="hard_egg" imageContentMode="scaleAspectFit"/>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="HARD">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Montserrat-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="hardButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g45-ah-x9M"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSR-rn-yhq">
-                                <rect key="frame" x="120" y="254" width="81" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCW-rk-JQL">
+                                <rect key="frame" x="30" y="251" width="354" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="qxx-R9-qAB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-Xg-MzO">
-                                <rect key="frame" x="214" y="254" width="81" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCW-rk-JQL">
-                                <rect key="frame" x="197" y="253" width="14" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="GOX-Gd-ngi">
+                                <rect key="frame" x="30" y="630" width="354" height="187"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-yj-W3M" userLabel="eggButtonStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2C-33-Zix">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="115"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SOFT">
+                                                    <backgroundConfiguration key="background" image="soft_egg" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myr-Xi-zr1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-9I-F1z">
+                                                <rect key="frame" x="125.5" y="0.0" width="103" height="115"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="MEDIUM">
+                                                    <backgroundConfiguration key="background" image="medium_egg" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwA-27-NQf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-h0-Jd4">
+                                                <rect key="frame" x="251.5" y="0.0" width="102.5" height="115"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="HARD">
+                                                    <backgroundConfiguration key="background" image="hard_egg" imageContentMode="scaleAspectFit"/>
+                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngd-d0-Imx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="fDH-DT-OLb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JtP-z8-SOa">
+                                        <rect key="frame" x="0.0" y="183" width="354" height="4"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.72603402329189259" green="0.96136217899030252" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hCW-rk-JQL" firstAttribute="top" relation="lessThanOrEqual" secondItem="Vj2-lL-loy" secondAttribute="bottom" constant="85.5" id="0C7-fA-SHJ"/>
+                            <constraint firstItem="AvI-ou-Yn5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0iN-u9-sZJ"/>
+                            <constraint firstItem="AvI-ou-Yn5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mI-TD-wPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hCW-rk-JQL" secondAttribute="trailing" constant="30" id="9vS-Fq-l8G"/>
+                            <constraint firstItem="Vj2-lL-loy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="Cxh-vM-Hjs"/>
+                            <constraint firstItem="hCW-rk-JQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DKt-RS-KFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOX-Gd-ngi" secondAttribute="trailing" constant="30" id="VAC-ZQ-XAG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vj2-lL-loy" secondAttribute="trailing" constant="16" id="bN9-gl-Vqi"/>
+                            <constraint firstItem="GOX-Gd-ngi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bRb-2j-rsX"/>
+                            <constraint firstItem="AvI-ou-Yn5" firstAttribute="top" secondItem="hCW-rk-JQL" secondAttribute="bottom" constant="24" id="kbH-9F-8hq"/>
+                            <constraint firstItem="Vj2-lL-loy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kde-XZ-nKG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GOX-Gd-ngi" secondAttribute="bottom" constant="45" id="ptK-yG-gfs"/>
+                            <constraint firstItem="AvI-ou-Yn5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ydd-wp-tPl"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="Vj2-lL-loy" id="D8B-PE-9WY"/>
-                        <outlet property="minutesLabel" destination="RSR-rn-yhq" id="xMU-K8-as3"/>
+                        <outlet property="hardButton" destination="Nxp-h0-Jd4" id="RJU-RZ-7X6"/>
+                        <outlet property="mediumButton" destination="4kR-9I-F1z" id="U0H-Kq-xc5"/>
                         <outlet property="progressBar" destination="JtP-z8-SOa" id="a3h-8y-7pv"/>
-                        <outlet property="secundesLabel" destination="jRd-Xg-MzO" id="dOM-wn-FIt"/>
+                        <outlet property="resultLabel" destination="Vj2-lL-loy" id="D8B-PE-9WY"/>
+                        <outlet property="softButton" destination="l2C-33-Zix" id="jaO-lM-PJs"/>
+                        <outlet property="timeLabel" destination="hCW-rk-JQL" id="21z-V4-0RT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198.55072463768118" y="130.58035714285714"/>
+            <point key="canvasLocation" x="-855" y="139"/>
         </scene>
     </scenes>
     <resources>
