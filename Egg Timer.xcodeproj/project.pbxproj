@@ -13,6 +13,7 @@
 		917C3DBA286054AA00AC432D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917C3DB8286054AA00AC432D /* Main.storyboard */; };
 		917C3DBC286054AC00AC432D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917C3DBB286054AC00AC432D /* Assets.xcassets */; };
 		917C3DBF286054AC00AC432D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917C3DBD286054AC00AC432D /* LaunchScreen.storyboard */; };
+		A0AABA882860BABB00DC5C28 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0AABA872860BABA00DC5C28 /* alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		917C3DBB286054AC00AC432D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917C3DBE286054AC00AC432D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917C3DC0286054AC00AC432D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AABA872860BABA00DC5C28 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				917C3DB2286054AA00AC432D /* AppDelegate.swift */,
 				917C3DB4286054AA00AC432D /* SceneDelegate.swift */,
+				A0AABA872860BABA00DC5C28 /* alarm.mp3 */,
 				917C3DB6286054AA00AC432D /* ViewController.swift */,
 				917C3DB8286054AA00AC432D /* Main.storyboard */,
 				917C3DBB286054AC00AC432D /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917C3DBF286054AC00AC432D /* LaunchScreen.storyboard in Resources */,
+				A0AABA882860BABB00DC5C28 /* alarm.mp3 in Resources */,
 				917C3DBC286054AC00AC432D /* Assets.xcassets in Resources */,
 				917C3DBA286054AA00AC432D /* Main.storyboard in Resources */,
 			);

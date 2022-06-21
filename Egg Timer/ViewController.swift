@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     // MARK: - Outlets
+    
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var softButton: UIButton!
@@ -35,8 +37,10 @@ class ViewController: UIViewController {
     var minutes: Int {
         target / 60
     }
-    
+
     var timer: Timer?
+    
+    var player: AVAudioPlayer!
 
     // MARK: - Actions
     
@@ -45,7 +49,7 @@ class ViewController: UIViewController {
         switch sender {
         case softButton:
             text = "You choised soft mode"
-            target = 5 * 60
+            target = 5
         case mediumButton:
             text = "You choised medium mode"
             target = 10 * 60
@@ -60,9 +64,11 @@ class ViewController: UIViewController {
         timer?.invalidate()
         timer = nil
         resultLabel.text = text
+        player?.stop()
     }
     
     @IBAction func startTouched(_ sender: UIButton) {
+        player?.stop()
         guard timer == nil else {return}
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.target -= 1
@@ -73,6 +79,7 @@ class ViewController: UIViewController {
             if self.target == .zero {
                 timer.invalidate()
                 self.resultLabel.text = "Your eggs are ready"
+                self.playSound(soundName: "alarm")
                 return
             }
         }
@@ -82,6 +89,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        progressBar.progress = 0
+    }
+    
+    func playSound(soundName: String?) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
 
 }

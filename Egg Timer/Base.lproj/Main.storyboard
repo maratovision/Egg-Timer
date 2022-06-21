@@ -26,7 +26,7 @@
                                     <action selector="startTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9oa-IR-tUg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here will be text from buttons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj2-lL-loy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choise mode for eggs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj2-lL-loy">
                                 <rect key="frame" x="16" y="134" width="382" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -50,10 +50,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2C-33-Zix">
                                                 <rect key="frame" x="0.0" y="0.0" width="102.5" height="115"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="SOFT">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="soft_egg" imageContentMode="scaleAspectFit"/>
-                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
-                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myr-Xi-zr1"/>
@@ -62,10 +60,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-9I-F1z">
                                                 <rect key="frame" x="125.5" y="0.0" width="103" height="115"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="MEDIUM">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="medium_egg" imageContentMode="scaleAspectFit"/>
-                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
-                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwA-27-NQf"/>
@@ -74,10 +70,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxp-h0-Jd4">
                                                 <rect key="frame" x="251.5" y="0.0" width="102.5" height="115"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="HARD">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="hard_egg" imageContentMode="scaleAspectFit"/>
-                                                    <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
-                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="eggButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngd-d0-Imx"/>
